@@ -1,4 +1,4 @@
-package com.recursion;
+package com.harsh.recursion;
 
 import java.util.Arrays;
 
@@ -6,17 +6,17 @@ public class Sorting {
     public static void main(String[] args) {
         int[] arr = {4, 34, 56, 3, 8, 6, 43, 23};
 
-//        int[] sort = MergeSort.mergeSort(arr, 0, arr.length-1);
-//        System.out.println(Arrays.toString(sort));
+        int[] sort1 = MergeSort.mergeSort(arr, 0, arr.length-1);
+        System.out.println(Arrays.toString(sort1));
 
-//        QuickSort.quickSort(arr,0,arr.length-1);
-//        System.out.println(Arrays.toString(arr));
+        QuickSort.quickSort(arr,0,arr.length-1);
+        System.out.println(Arrays.toString(arr));
 
-//        int[] sort = BubbleSort.recursiveBubbleSort(arr,0, arr.length-1);
-//        System.out.println(Arrays.toString(sort));
+        int[] sort2 = BubbleSort.recursiveBubbleSort(arr,0, arr.length-1);
+        System.out.println(Arrays.toString(sort2));
 
-        int[] sort = SelectionSort.recursiveSelectionSort(arr,0, arr.length-1 ,0 );
-        System.out.println(Arrays.toString(sort));
+        int[] sort3 = SelectionSort.recursiveSelectionSort(arr,0, arr.length-1 ,0 );
+        System.out.println(Arrays.toString(sort3));
     }
 }
 

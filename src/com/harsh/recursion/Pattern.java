@@ -1,4 +1,4 @@
-package com.recursion;
+package com.harsh.recursion;
 
 public class Pattern {
     public static void main(String[] args) {

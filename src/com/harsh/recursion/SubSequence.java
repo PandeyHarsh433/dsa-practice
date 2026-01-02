@@ -1,11 +1,11 @@
-package com.recursion;
+package com.harsh.recursion;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class SubSequence {
     public static void main(String[] args) {
-
+        System.out.println(subSeq("","abc"));
     }
     /**
      * Prints all subsequences of a given string.

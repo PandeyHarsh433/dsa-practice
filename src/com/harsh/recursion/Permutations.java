@@ -1,4 +1,4 @@
-package com.recursion;
+package com.harsh.recursion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +12,19 @@ public class Permutations {
          System.out.println(p2);
          System.out.println(permutationCount("", "abc"));
     }
+
+    /*
+     * INTUITION: "The Slot Filler"
+     * 1. TAKE & INSERT: Take one character from the 'Unprocessed' (up) string.
+     * 2. CHOOSE SLOTS: Insert that character into every possible position
+     * of the current 'Processed' (p) string.
+     * 3. EXPAND:
+     * - If p = "ab", and you take 'c', you can put 'c' in 3 spots:
+     * _ a _ b _  => "cab", "acb", "abc"
+     * 4. TERMINATE: When 'Unprocessed' is empty, you've used all letters.
+     * 5. COUNT: Each leaf node in this decision tree represents 1 unique permutation.
+     */
+
     static void permutation(String p, String up) {
         if (up.isEmpty()) {
             System.out.print(p + " ");
